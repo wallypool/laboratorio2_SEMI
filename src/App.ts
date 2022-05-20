@@ -21,6 +21,10 @@ class App{
     private startModules() {
         console.log("Load Modules!!!");
         //code of the different project modules
+        this.app.use("/",(request,response) =>{
+            response.send("Hola el servidor esta corriendo en el puerto 8000");
+        })
+        
     }
 
     public getApp(){
